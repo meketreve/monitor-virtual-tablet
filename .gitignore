@@ -4,3 +4,5 @@ credentials/
 sunshine_state.json
 *.log
 *.log.*
+*.key
+.env*

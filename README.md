@@ -17,3 +17,7 @@ bash install.sh --xorg   # também instala o monitor virtual em /etc/X11 (sudo)
 ```
 
 As chaves (`credentials/`) e os pareamentos (`sunshine_state.json`) ficam só em `~/.config/sunshine-tablet/` e não entram no repo.
+
+## Segurança
+
+Chaves, tokens e pareamentos nunca entram no repo: ficam em `~/.config`. O hook `.githooks/pre-commit` bloqueia commit com arquivo privado, formato de chave conhecido ou o valor real de alguma credencial local. Num clone novo, ative com `git config core.hooksPath .githooks`.

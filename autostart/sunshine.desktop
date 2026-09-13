@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Sunshine
+Comment=Inicia o servico do Sunshine (Cinnamon nao ativa graphical-session.target)
+Exec=sh -c "systemctl --user import-environment DISPLAY XAUTHORITY && systemctl --user start app-dev.lizardbyte.app.Sunshine.service sunshine-tablet.service"
+Icon=sunshine
+Terminal=false
+X-GNOME-Autostart-enabled=true
+NoDisplay=true

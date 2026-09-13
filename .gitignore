@@ -1,0 +1,6 @@
+# Chaves e pareamentos do Sunshine nunca entram no repo
+credentials/
+*.pem
+sunshine_state.json
+*.log
+*.log.*

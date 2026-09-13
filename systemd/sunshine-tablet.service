@@ -1,0 +1,16 @@
+[Unit]
+Description=Sunshine (tablet - monitor virtual DP-0)
+After=app-dev.lizardbyte.app.Sunshine.service
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+ExecStartPre=/bin/sleep 8
+ExecStart=/usr/bin/sunshine %h/.config/sunshine-tablet/sunshine.conf
+# Sem /dev/uinput o Sunshine usa o fallback XTest do X11, que posiciona o
+# mouse absoluto (toque do tablet) corretamente com varios monitores.
+# O mouse virtual do libvirtualhid mistura eixos REL+ABS e o libinput ignora o ABS.
+PrivateUsers=yes
+InaccessiblePaths=-/dev/uinput
+Restart=on-failure
+RestartSec=5s

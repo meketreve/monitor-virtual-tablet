@@ -1,0 +1,6 @@
+{
+  "env": {},
+  "apps": [
+    { "name": "Tela do Tablet", "image-path": "desktop.png" }
+  ]
+}

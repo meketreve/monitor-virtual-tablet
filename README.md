@@ -2,7 +2,7 @@
 
 Transforma um tablet num **segundo monitor sem fio** no Linux: cria um monitor virtual na placa NVIDIA (sem nada plugado) e transmite só ele pro tablet com uma **segunda instância do Sunshine**, via Moonlight. A instância normal do Sunshine continua transmitindo a tela principal, pra jogar ou acessar o PC.
 
-Uso isso pra deixar o [**Painel do PC**](https://github.com/meketreve/pc-dashboard) sempre aberto no tablet.
+Uso isso pra deixar a [**Toca do Texugo**](https://github.com/meketreve/toca-do-texugo), o painel do meu PC, sempre aberta no tablet.
 
 ## Como funciona
 
